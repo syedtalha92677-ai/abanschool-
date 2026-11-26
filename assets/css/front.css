@@ -1,0 +1,75 @@
+/* Abn School — front-end styles.
+   Palette: Deep emerald #0C3B2E | Warm gold #C9A227 | Ivory #FAF6EE
+   Charcoal ink #1F2937 | Soft sage #DCE8DD | Muted #5B6B62 */
+body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1F2937; background: #fff; }
+a { color: #14604A; }
+.abn-site-header { background: #0C3B2E; color: #fff; }
+.abn-header-inner { max-width: 1100px; margin: 0 auto; padding: 16px 20px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.abn-brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.abn-brand a { color: #fff; font-size: 24px; font-weight: 800; text-decoration: none; letter-spacing: .3px; }
+.abn-brand span { display: block; font-size: 12px; color: #DCE8DD; margin-top: 2px; }
+.abn-logo { max-height: 52px; width: auto; border-radius: 8px; }
+.abn-nav { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.abn-nav a { color: #DCE8DD; text-decoration: none; font-size: 15px; font-weight: 600; padding: 6px 2px; }
+.abn-nav a:hover { color: #fff; }
+.abn-nav-cta { background: #C9A227 !important; color: #0C3B2E !important; padding: 9px 18px !important; border-radius: 999px; }
+.abn-site-main { min-height: 60vh; }
+.abn-page-inner { max-width: 1100px; margin: 0 auto; padding: 34px 20px 50px; }
+.abn-page-inner h1 { color: #0C3B2E; font-size: 34px; }
+.abn-page-inner h2 { color: #0C3B2E; }
+.abn-site-footer { background: #0C3B2E; color: #DCE8DD; margin-top: 20px; }
+.abn-footer-inner { max-width: 1100px; margin: 0 auto; padding: 30px 20px; display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+.abn-site-footer strong { color: #fff; font-size: 18px; }
+.abn-site-footer a { color: #E9D9A6; }
+.abn-copy { text-align: center; font-size: 12px; color: #9DB8A8; padding: 0 20px 20px; margin: 0; }
+.abn-portal .abn-card { background: #fff; border: 1px solid #E7DFC8; }
+.abn-portal { background: #FAF6EE; padding: 20px; border-radius: 14px; }
+/* Hero (front page) */
+.abn-hero { background: linear-gradient(135deg, #0C3B2E 0%, #14604A 100%); color: #fff; border-radius: 18px; padding: 48px 36px; margin-bottom: 28px; }
+.abn-hero h1 { color: #fff !important; font-size: 42px; margin: 0 0 10px; }
+.abn-hero p { color: #DCE8DD; font-size: 18px; line-height: 1.6; max-width: 640px; }
+.abn-hero .abn-btn { margin-top: 10px; margin-right: 8px; }
+.abn-hero .abn-btn.outline { color: #fff; border-color: #fff; }
+.abn-hero .abn-btn.outline:hover { background: rgba(255,255,255,.12); color: #fff; }
+/* Buttons (also used by shortcodes on public pages) */
+.abn-btn { display: inline-block; background: #C9A227; color: #0C3B2E; font-weight: 700; border: none; border-radius: 999px; padding: 11px 22px; cursor: pointer; text-decoration: none; font-size: 14px; }
+.abn-btn:hover { background: #b8921f; color: #0C3B2E; }
+.abn-btn.outline { background: transparent; border: 2px solid #14604A; color: #14604A; }
+.abn-btn.small { padding: 6px 14px; font-size: 12px; }
+/* Forms (admission inquiry on the public Admissions page) */
+.abn-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; background: #FAF6EE; border: 1px solid #E7DFC8; border-radius: 14px; padding: 20px; }
+.abn-form label { font-size: 13px; color: #5B6B62; display: block; }
+.abn-form input, .abn-form select, .abn-form textarea { width: 100%; margin-top: 5px; padding: 9px 11px; border: 1px solid #E3D9C2; border-radius: 8px; font-size: 14px; background: #fff; box-sizing: border-box; }
+@media (max-width: 700px) { .abn-form { grid-template-columns: 1fr; } }
+.abn-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 28px; }
+.abn-stat { background: #FAF6EE; border: 1px solid #E7DFC8; border-top: 4px solid #C9A227; border-radius: 12px; padding: 18px; text-align: center; }
+.abn-stat strong { display: block; font-size: 30px; color: #0C3B2E; }
+.abn-stat span { font-size: 13px; color: #5B6B62; }
+.abn-section { margin-bottom: 28px; }
+.abn-section h2 { border-bottom: 3px solid #C9A227; display: inline-block; padding-bottom: 6px; }
+/* Class + teacher cards */
+.abn-class-list, .abn-teacher-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.abn-class-card, .abn-teacher-card { background: #FAF6EE; border: 1px solid #E7DFC8; border-radius: 14px; padding: 20px; }
+.abn-class-card h3, .abn-teacher-card h3 { margin: 0 0 8px; color: #0C3B2E; }
+.abn-class-fee { color: #0C3B2E; }
+.abn-teacher-avatar { width: 56px; height: 56px; border-radius: 50%; background: #0C3B2E; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700; margin-bottom: 10px; }
+/* Notices */
+.abn-notice-list { display: grid; gap: 14px; }
+.abn-notice { background: #FAF6EE; border: 1px solid #E7DFC8; border-left: 4px solid #C9A227; border-radius: 10px; padding: 16px 18px; }
+.abn-notice h3 { margin: 0 0 4px; color: #0C3B2E; }
+.abn-notice h3 a { color: #0C3B2E; text-decoration: none; }
+.abn-notice-date { font-size: 12px; color: #5B6B62; margin: 0 0 8px; }
+.abn-note { color: #5B6B62; font-size: 13px; line-height: 1.6; }
+.abn-alert { background: #E4F2EC; border-left: 4px solid #14604A; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; color: #0C3B2E; }
+.abn-alert.warn { background: #FDEBD9; border-left-color: #C9A227; }
+@media (max-width: 900px) { .abn-stats { grid-template-columns: repeat(2, 1fr); } .abn-class-list, .abn-teacher-list { grid-template-columns: 1fr; } }
+@media (max-width: 700px) {
+  .abn-brand a { font-size: 20px; }
+  .abn-hero { padding: 32px 22px; }
+  .abn-hero h1 { font-size: 30px; }
+  .abn-hero p { font-size: 16px; }
+  .abn-page-inner h1 { font-size: 28px; }
+  .abn-nav { gap: 12px; }
+  .abn-nav a { font-size: 14px; }
+  .abn-portal { padding: 12px; }
+}

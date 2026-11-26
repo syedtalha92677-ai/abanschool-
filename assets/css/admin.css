@@ -1,0 +1,93 @@
+/* Abn School — admin + portal styles.
+   Palette: Deep emerald #0C3B2E | Warm gold #C9A227 | Ivory #FAF6EE
+   Charcoal ink #1F2937 | Soft sage #DCE8DD | Muted #5B6B62 */
+.abn-wrap { display: flex; gap: 0; margin: 0 0 0 -20px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+.abn-sidebar { width: 230px; min-height: 100vh; background: #0C3B2E; color: #fff; padding: 26px 0; flex-shrink: 0; }
+.abn-logo { font-size: 20px; font-weight: 700; padding: 0 22px 22px; border-bottom: 1px solid rgba(255,255,255,.12); }
+.abn-logo span { display: block; font-size: 12px; font-weight: 400; color: #DCE8DD; margin-top: 4px; letter-spacing: .5px; }
+.abn-sidebar nav { padding: 16px 0; }
+.abn-sidebar nav a { display: block; color: #DCE8DD; text-decoration: none; padding: 11px 22px; font-size: 14px; border-left: 4px solid transparent; }
+.abn-sidebar nav a:hover { background: rgba(255,255,255,.06); color: #fff; }
+.abn-sidebar nav a.active { background: #14604A; color: #fff; border-left-color: #C9A227; }
+.abn-side-foot { padding: 20px 22px; font-size: 11px; color: #9DB8A8; line-height: 1.6; }
+.abn-main { flex: 1; background: #FAF6EE; padding: 26px 30px 40px; min-width: 0; }
+.abn-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; flex-wrap: wrap; gap: 10px; }
+.abn-top h1 { font-size: 24px; margin: 0; color: #0C3B2E; }
+.abn-top p { margin: 4px 0 0; color: #5B6B62; }
+.abn-pill { background: #0C3B2E; color: #fff; border-radius: 999px; padding: 7px 14px; font-size: 12px; }
+.abn-top-actions { display: flex; gap: 8px; align-items: center; }
+.abn-kpis { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.abn-card { background: #fff; border-radius: 14px; padding: 20px; box-shadow: 0 2px 10px rgba(12,59,46,.07); margin-bottom: 16px; overflow-x: auto; }
+.abn-card h3 { margin: 0 0 14px; font-size: 16px; color: #0C3B2E; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap; }
+.abn-kpi { border-top: 5px solid #14604A; }
+.abn-kpi.mustard { border-top-color: #C9A227; }
+.abn-kpi.orange { border-top-color: #C9A227; }
+.abn-kpi.teal { border-top-color: #14604A; }
+.abn-kpi-label { display: block; font-size: 13px; color: #5B6B62; }
+.abn-kpi strong { display: block; font-size: 27px; color: #0C3B2E; margin: 6px 0 2px; }
+.abn-kpi small { color: #5B6B62; font-size: 12px; display: block; line-height: 1.5; }
+.abn-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+.abn-bars { display: flex; align-items: flex-end; gap: 14px; height: 170px; padding-top: 8px; }
+.abn-bar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 8px; height: 100%; justify-content: flex-end; min-width: 0; }
+.abn-bar { width: 100%; max-width: 44px; background: linear-gradient(180deg, #14604A, #DCE8DD); border-radius: 6px 6px 0 0; }
+.abn-bar.highlight { background: linear-gradient(180deg, #C9A227, #E9D9A6); }
+.abn-bar-wrap span { font-size: 12px; color: #5B6B62; }
+.abn-donut { width: 150px; height: 150px; margin: 6px auto 10px; border-radius: 50%;
+  background: conic-gradient(#14604A 0 calc(var(--p) * 1%), #EDE6D3 0 100%);
+  display: flex; align-items: center; justify-content: center; }
+.abn-donut span { background: #fff; width: 100px; height: 100px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 700; color: #0C3B2E; }
+.abn-note { color: #5B6B62; font-size: 13px; line-height: 1.6; }
+.abn-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.abn-table th { text-align: left; color: #5B6B62; font-size: 12px; text-transform: uppercase; letter-spacing: .4px; padding: 8px 6px; border-bottom: 2px solid #EDE6D3; white-space: nowrap; }
+.abn-table td { padding: 10px 6px; border-bottom: 1px solid #F1EBDA; color: #1F2937; }
+.abn-table input[type="number"], .abn-table input[type="text"], .abn-table select { padding: 6px 8px; border: 1px solid #E3D9C2; border-radius: 6px; font-size: 14px; }
+.abn-btn { display: inline-block; background: #C9A227; color: #0C3B2E; font-weight: 700; border: none; border-radius: 999px; padding: 11px 22px; cursor: pointer; text-decoration: none; font-size: 14px; }
+.abn-btn:hover { background: #b8921f; color: #0C3B2E; }
+.abn-btn.orange { background: #14604A; color: #fff; }
+.abn-btn.outline { background: transparent; border: 2px solid #14604A; color: #14604A; }
+.abn-btn.small { padding: 6px 14px; font-size: 12px; }
+.abn-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+.abn-pill-status { border-radius: 999px; padding: 4px 12px; font-size: 12px; font-weight: 600; white-space: nowrap; }
+.abn-pill-status.paid { background: #E4F2EC; color: #14604A; }
+.abn-pill-status.pending { background: #FDEBD9; color: #8a6d1a; }
+.abn-form { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.abn-form label { font-size: 13px; color: #5B6B62; display: block; }
+.abn-form input, .abn-form select, .abn-form textarea { width: 100%; margin-top: 5px; padding: 9px 11px; border: 1px solid #E3D9C2; border-radius: 8px; font-size: 14px; background: #FFFEF9; box-sizing: border-box; }
+.abn-form small { display: block; margin-top: 6px; color: #5B6B62; }
+.abn-form fieldset { border: 1px solid #E3D9C2; border-radius: 8px; padding: 10px 12px; }
+.abn-form fieldset legend { font-size: 13px; color: #5B6B62; }
+.abn-alert { background: #E4F2EC; border-left: 4px solid #14604A; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; color: #0C3B2E; }
+.abn-alert.warn { background: #FDEBD9; border-left-color: #C9A227; }
+.abn-filter { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 14px; }
+.abn-filter input[type="text"], .abn-filter input[type="date"], .abn-filter select { padding: 8px 10px; border: 1px solid #E3D9C2; border-radius: 8px; font-size: 14px; }
+.abn-filter label { font-size: 13px; color: #5B6B62; }
+.abn-idgrid { display: flex; flex-wrap: wrap; gap: 14px; }
+.abn-idcard { width: 250px; border: 2px solid #0C3B2E; border-radius: 10px; overflow: hidden; background: #fff; text-align: center; padding-bottom: 12px; }
+.abn-idcard-head { background: #0C3B2E; color: #fff; padding: 10px; font-weight: 700; font-size: 14px; }
+.abn-idcard-photo { width: 80px; height: 100px; border: 2px solid #C9A227; margin: 12px auto 8px; line-height: 100px; color: #5B6B62; background: #FAF6EE; }
+.abn-idcard-name { font-weight: 700; font-size: 16px; color: #0C3B2E; }
+.abn-idcard-row { font-size: 13px; color: #5B6B62; padding: 2px 8px; }
+.abn-idcard .abn-btn { margin-top: 8px; }
+/* Portal tabs (front end) */
+.abn-portal-tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+.abn-portal-tabs a { background: #fff; border: 2px solid #14604A; color: #14604A; border-radius: 999px; padding: 8px 16px; text-decoration: none; font-weight: 600; font-size: 13px; }
+.abn-portal-tabs a.active { background: #0C3B2E; border-color: #0C3B2E; color: #fff; }
+.abn-notice { border-left: 4px solid #C9A227; padding: 4px 0 4px 14px; margin-bottom: 16px; }
+.abn-notice h3 { margin: 0 0 4px; }
+.abn-notice-date { font-size: 12px; color: #5B6B62; }
+@media (max-width: 1100px) { .abn-kpis { grid-template-columns: repeat(2, 1fr); } .abn-grid { grid-template-columns: 1fr; } .abn-sidebar { width: 180px; } .abn-form { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) {
+  .abn-wrap { flex-direction: column; margin: 0 -10px; }
+  .abn-sidebar { width: 100%; min-height: 0; padding: 14px 0 8px; }
+  .abn-logo { padding: 0 16px 12px; }
+  .abn-sidebar nav { padding: 6px 0; display: flex; flex-wrap: wrap; }
+  .abn-sidebar nav a { padding: 8px 14px; border-left: none; border-bottom: 3px solid transparent; }
+  .abn-sidebar nav a.active { border-bottom-color: #C9A227; }
+  .abn-side-foot { display: none; }
+  .abn-main { padding: 16px 14px 30px; }
+  .abn-kpis { grid-template-columns: 1fr; }
+  .abn-form { grid-template-columns: 1fr; }
+  .abn-top h1 { font-size: 20px; }
+  .abn-card { padding: 14px; }
+  .abn-table { display: block; overflow-x: auto; }
+}

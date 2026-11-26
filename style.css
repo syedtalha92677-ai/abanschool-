@@ -1,0 +1,27 @@
+/*
+Theme Name: Abn School
+Theme URI: https://abnschool.local
+Author: Abn School
+Author URI: https://abnschool.local
+Description: Complete school management system built into a WordPress theme — students, fees, attendance, exams, timetable, homework, staff, ID cards, WhatsApp reminders, parent & student portals, notices and a School Portal. No plugin required, no Elementor or WooCommerce dependency.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 7.1
+Requires PHP: 7.4
+License: GPLv2 or later
+Text Domain: abn-school
+Tags: school, education, management
+*/
+
+/* Palette: Deep emerald #0C3B2E | Warm gold #C9A227 | Ivory #FAF6EE
+   Charcoal ink #1F2937 | Soft sage #DCE8DD | Muted #5B6B62 */
+:root {
+  --abn-emerald: #0C3B2E;
+  --abn-emerald-light: #14604A;
+  --abn-gold: #C9A227;
+  --abn-gold-soft: #E9D9A6;
+  --abn-ivory: #FAF6EE;
+  --abn-sage: #DCE8DD;
+  --abn-ink: #1F2937;
+  --abn-muted: #5B6B62;
+}
